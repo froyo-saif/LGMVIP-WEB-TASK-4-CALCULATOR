@@ -1,12 +1,12 @@
 
 
-document.getElementById('answer').readOnly = true; //set this attribute in Html file
+document.getElementById('answer').readOnly = true; 
 let screen = document.getElementById('answer');
 buttons = document.querySelectorAll('button');
 let screenValue = '';
 for (item of buttons) {
     item.addEventListener('click', (e) => {
-        // console.log(buttonText, "has been pressed");
+        
         buttonText = e.target.innerText;
         if (buttonText == 'X') {
             buttonText = '*';
